@@ -4,12 +4,12 @@ import { Text, View } from 'react-native';
 
 import './config/ReactotronConfig';
 import store from './store';
+import Routes from './routes';
 
 const App = () => (
-  <Provider>
-    <View>
-      <Text>Welcome to React Native!</Text>
-    </View>
+  <Provider store={store}>
+    <View />
+    {/* <Routes/> */}
   </Provider>
 );
 
